@@ -1,0 +1,47 @@
+:root {
+    --bots-blue: #00A3E0;
+    --dark-bg: #111827;
+    --card-bg: #ffffff;
+    --text-main: #374151;
+}
+
+body { font-family: 'Plus Jakarta Sans', sans-serif; margin: 0; background: #f3f4f6; color: var(--text-main); line-height: 1.6; }
+
+header { background: var(--dark-bg); color: white; padding: 70px 20px; text-align: center; }
+header h1 { font-size: 3rem; margin: 0; letter-spacing: -2px; }
+.slogan { max-width: 850px; margin: 15px auto 0; font-size: 1rem; opacity: 0.8; }
+
+.calculator-card { background: white; max-width: 900px; margin: -40px auto 40px; padding: 30px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); position: relative; z-index: 10; }
+.grade-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 12px; margin: 20px 0; }
+.grade-input select { width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #d1d5db; font-weight: 600; }
+
+.calc-results { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #eee; padding-top: 20px; }
+#pointTotal { font-size: 1.4rem; font-weight: 800; color: var(--bots-blue); }
+
+.primary-btn { background: var(--bots-blue); color: white; border: none; padding: 14px 28px; border-radius: 10px; font-weight: 700; cursor: pointer; transition: 0.3s; }
+.primary-btn:hover { transform: scale(1.03); background: #0089bd; }
+
+.search-area { max-width: 900px; margin: 0 auto 30px; padding: 0 20px; }
+#uniSearch { width: 100%; padding: 18px; border-radius: 12px; border: 2px solid #e5e7eb; font-size: 1rem; outline: none; }
+#uniSearch:focus { border-color: var(--bots-blue); }
+
+.uni-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; max-width: 1200px; margin: 0 auto; padding: 20px; }
+.uni-card { background: white; padding: 30px; border-radius: 18px; border-left: 6px solid #d1d5db; cursor: pointer; transition: 0.3s; }
+.uni-card.eligible { border-left-color: #10b981; background: #f0fdf4; }
+.uni-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+
+.tag { font-size: 0.75rem; font-weight: 800; text-transform: uppercase; padding: 4px 10px; border-radius: 6px; display: inline-block; margin-bottom: 10px; }
+.tag-eligible { background: #dcfce7; color: #166534; }
+.tag-standard { background: #f3f4f6; color: #4b5563; }
+
+.course-table { width: 100%; border-collapse: collapse; background: white; margin: 25px 0; border-radius: 12px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+.course-table th { background: #f9fafb; padding: 15px; text-align: left; font-size: 0.85rem; color: #6b7280; }
+.course-table td { padding: 15px; border-top: 1px solid #f3f4f6; }
+.match-row { background: #f0fdf4; font-weight: 600; }
+
+.alt-box { background: #fff7ed; border-left: 5px solid #f97316; padding: 25px; border-radius: 12px; }
+
+footer { background: white; padding: 60px 20px; border-top: 1px solid #e5e7eb; text-align: center; margin-top: 50px; }
+.creator-credits { display: flex; justify-content: center; gap: 50px; margin-bottom: 25px; }
+.credit-block strong { display: block; color: var(--bots-blue); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; }
+.credit-block span { font-size: 1.4rem; font-weight: 800; color: var(--dark-bg); }
